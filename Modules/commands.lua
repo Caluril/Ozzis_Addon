@@ -9,7 +9,56 @@ for addon=1, GetNumAddOns() do
         SLASH_RELOAD_UI1 = "/reload";
         SLASH_RELOAD_UI2 = "/rl";
     elseif name == "!!NoTaint2" and loaded then
-        SLASH_NOTAINTII1 = "/nt2";
+        SLASH_NOTAINTII2 = "/nt2";
+    elseif name == "BugSack" and loaded then
+        SLASH_BugSack2 = "/bug"
+    end
+end
+
+-- Script CVars
+SLASH_SCRIPT1 = "/sc";
+SlashCmdList['SCRIPT'] = function(msg)
+    if msg == "" then
+        ChatFrame1:AddMessage("|cff11ff11/sc errors on - |rScript Errors ON.")
+        ChatFrame1:AddMessage("|cff11ff11/sc errors off - |rScript Errors OFF.")
+        ChatFrame1:AddMessage("|cff11ff11/sc warning on - |rScript Warnings ON.")
+        ChatFrame1:AddMessage("|cff11ff11/sc warning off - |rScript Warnings OFF.")
+        ChatFrame1:AddMessage("|cff11ff11/sc profile on - |rScript Profile ON.")
+        ChatFrame1:AddMessage("|cff11ff11/sc profile off - |rScript Profile OFF.")
+        ChatFrame1:AddMessage("|cff11ff11/sc player ## - |rChange nameplate max distance ## is 20 or 41")
+    elseif msg == "errors on" then
+        SetCVar("scriptErrors", 1)
+        ChatFrame1:AddMessage("Script Errors ON.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "errors off" then
+        SetCVar("scriptErrors", 0)
+        ChatFrame1:AddMessage("Script Errors OFF.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "warning on" then
+        SetCVar("scriptWarnings", 1)
+        ChatFrame1:AddMessage("Script Warnings ON.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "warning off" then
+        SetCVar("scriptWarnings", 0)
+        ChatFrame1:AddMessage("Script Warnings OFF.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "profile on" then
+        SetCVar("scriptProfile", 1)
+        ChatFrame1:AddMessage("Script Profile ON.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "profile off" then
+        SetCVar("scriptProfile", 0)
+        ChatFrame1:AddMessage("Script Profile OFF.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "player 20" then
+        SetCVar("nameplatePlayerMaxDistance", 20)
+        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 20")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "player 41" then
+        SetCVar("nameplatePlayerMaxDistance", 41)
+        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 41")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+
     end
 end
 
@@ -37,7 +86,7 @@ SlashCmdList['CHATLOG'] = function(msg)
     elseif msg == "off" then
         LoggingChat(false);
         ChatFrame1:AddMessage("Chat Logging is Disabled")
-z    end
+    end
 end
 
 -- Reset Instances /ri
