@@ -10,9 +10,7 @@ end
 
 function Debug_Taint()
 --Start
-if name == "DugisGuideViewerZ" and loaded then
-	ChatFrame1:AddMessage("It Works!")
-end
+
 --End
 end
 
