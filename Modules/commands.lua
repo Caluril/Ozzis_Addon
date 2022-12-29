@@ -8,6 +8,8 @@ for addon=1, GetNumAddOns() do
     elseif name == "ElvUI" and not loaded then
         SLASH_RELOAD_UI1 = "/reload";
         SLASH_RELOAD_UI2 = "/rl";
+    elseif name == "!!NoTaint2" and loaded then
+        SLASH_NOTAINTII1 = "/nt2";
     end
 end
 
@@ -27,13 +29,13 @@ SlashCmdList[CHATLOG] = function(msg)
         ChatFrame1:AddMessage("|cff11ff11/chatlog on - |rEnable Chat Logging.")
         ChatFrame1:AddMessage("|cff11ff11/chatlog off - |rDisable Chat Logging.")
     elseif msg == "on" then
-        LoggingChat(true)
+        LoggingChat(true);
         ChatFrame1:AddMessage("Chat Logging is Enabled")
     elseif msg == "off" then
-        LoggingChat(false)
+        LoggingChat(false);
         ChatFrame1:AddMessage("Chat Logging is Disabled")
     elseif msg == "auto" then
-        isLogging = LoggingChat(true)
+        isLogging = LoggingChat(true);
         local EventFrame = CreateFrame('Frame')
         EventFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
         EventFrame:SeScript('OnEvent', function(self, event, ...)
@@ -45,4 +47,9 @@ end
 SLASH_DEBUG1 = "/dt";
 SlashCmdList.DEBUG = function()
 	Debug_Taint();
+end
+
+SLASH_RSTINSTANCE1 = "/RINS" = function()
+    ResetInstances();
+    ChatFrame1:AddMessage("All instance have been reset")
 end
