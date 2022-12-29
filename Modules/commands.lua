@@ -13,18 +13,21 @@ for addon=1, GetNumAddOns() do
     end
 end
 
-SlashCmdList['RELOAD_UI'] = function()
+-- ReloadUI /rl or /reload
+SlashCmdList.RELOAD_UI = function()
     ReloadUI();
 end
 
+-- FrameStack /fs or /fstack
 SLASH_FRAMESTK1 = "/fs";
 SlashCmdList.FRAMESTK = function()
     LoadAddOn("Blizzard_DebugTools");
     FrameStackTooltip_Toggle()
 end
 
+-- ChatLogging /chatlog
 SLASH_CHATLOG1 = "/chatlog";
-SlashCmdList[CHATLOG] = function(msg)
+SlashCmdList['CHATLOG'] = function(msg)
     if msg == "" then
         ChatFrame1:AddMessage("|cff11ff11/chatlog on - |rEnable Chat Logging.")
         ChatFrame1:AddMessage("|cff11ff11/chatlog off - |rDisable Chat Logging.")
@@ -44,7 +47,9 @@ SlashCmdList[CHATLOG] = function(msg)
     end
 end
 
-SLASH_RSTINSTANCE1 = "/rins" = function()
+-- Reset Instances /ri
+SLASH_RINS1 = "/ri";
+SlashCmdList.RINS = function()
     ResetInstances();
-    ChatFrame1:AddMessage("All instance have been reset")
+    ChatFrame1:AddMessage("All instances have been reset")
 end
