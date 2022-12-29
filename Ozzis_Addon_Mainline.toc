@@ -1,0 +1,20 @@
+## Interface: 100002
+## Title: Ozzis Addon |cFF16C3F2v2.8.5|r
+## Author: Ozzi
+## Version: 2.8.5
+## OptionalDeps: ElvUI, DugiGuidesViewerZ
+## DefaultState: enabled
+## LoadManagers: AddonLoader
+
+## Libs
+libs\loadlibs.xml
+
+## Modules
+# Commands
+Modules\Chatcommands.lua
+
+# GSE Rotations
+#Modules\Rotations\Lutechi\lutechi.lua
+
+# Media For Elvui / SharedMedia
+Modules\Ozzis Media\Media.lua
