@@ -44,11 +44,6 @@ SlashCmdList[CHATLOG] = function(msg)
     end
 end
 
-SLASH_DEBUG1 = "/dt";
-SlashCmdList.DEBUG = function()
-	Debug_Taint();
-end
-
 SLASH_RSTINSTANCE1 = "/RINS" = function()
     ResetInstances();
     ChatFrame1:AddMessage("All instance have been reset")

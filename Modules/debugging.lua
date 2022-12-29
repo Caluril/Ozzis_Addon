@@ -3,6 +3,11 @@ local DISPLAY_STATE_OPEN_MINIMIZED_NO_LOG = 2;
 local DISPLAY_STATE_OPEN_MINIMIZED_WITH_LOG = 3;
 local DISPLAY_STATE_OPEN_MINIMIZED = 4;
 
+SLASH_DEBUG1 = "/dt";
+SlashCmdList.DEBUG = function()
+	Debug_Taint();
+end
+
 function Debug_Taint()
 --Start
 
