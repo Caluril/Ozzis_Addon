@@ -1,7 +1,7 @@
 # Ozzis_Addon<br/>
 Simple addon that adds Media for ElvUI or SharedMedia and adds other slash commands and functions for quality of life.<br/>
 <br/>
-##Slash Commands<br/>
+## Slash Commands<br/>
 Dugi Guides - /dg<br/>
     If DugiGuides is loaded this command will work along with default /dugi.<br/>
 Reload UI - /rl or /reload<br/>
