@@ -19,6 +19,8 @@ Script CVars - /sc<br/>
         hw on - off = Hardware Detect on or off<br/>
 FStack - /fs<br/>
     Adds /fs slash command along with blizzard's /fstack slash command.<br/>
+Edit Mode - /em<br/>
+    Adds /em slash command that opens Edit Mode, manual click x is required to exit Edit Mode.<br/>
 ChatLog - /chatlog<br/>
     Adds /chatlog with functions:<br/>
         /chatlog on or off = Turns Chat Logging on or off.<br/>
