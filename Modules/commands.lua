@@ -37,17 +37,10 @@ SlashCmdList['CHATLOG'] = function(msg)
     elseif msg == "off" then
         LoggingChat(false);
         ChatFrame1:AddMessage("Chat Logging is Disabled")
-    elseif msg == "auto" then
-        isLogging = LoggingChat(true);
-        local EventFrame = CreateFrame('Frame')
-        EventFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
-        EventFrame:SeScript('OnEvent', function(self, event, ...)
-            self[event](self, ...)
-        end )
     end
 end
 
--- Reset Instances /ri
+-- Reset Instances /riz
 SLASH_RINS1 = "/ri";
 SlashCmdList.RINS = function()
     ResetInstances();
