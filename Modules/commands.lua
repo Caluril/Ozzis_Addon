@@ -37,10 +37,10 @@ SlashCmdList['CHATLOG'] = function(msg)
     elseif msg == "off" then
         LoggingChat(false);
         ChatFrame1:AddMessage("Chat Logging is Disabled")
-    end
+z    end
 end
 
--- Reset Instances /riz
+-- Reset Instances /ri
 SLASH_RINS1 = "/ri";
 SlashCmdList.RINS = function()
     ResetInstances();
