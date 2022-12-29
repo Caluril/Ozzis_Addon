@@ -26,6 +26,8 @@ SlashCmdList['SCRIPT'] = function(msg)
         ChatFrame1:AddMessage("|cff11ff11/sc profile on - |rScript Profile ON.")
         ChatFrame1:AddMessage("|cff11ff11/sc profile off - |rScript Profile OFF.")
         ChatFrame1:AddMessage("|cff11ff11/sc player ## - |rChange nameplate max distance ## is 20 or 41")
+        ChatFrame1:AddMessage("|cff11ff11/sc hw on - |rHardware Detect ON.")
+        ChatFrame1:AddMessage("|cff11ff11/sc hw off - }rHardware Detect OFF.")
     elseif msg == "errors on" then
         SetCVar("scriptErrors", 1)
         ChatFrame1:AddMessage("Script Errors ON.")
@@ -58,7 +60,14 @@ SlashCmdList['SCRIPT'] = function(msg)
         SetCVar("nameplatePlayerMaxDistance", 41)
         ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 41")
         ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
-
+    elseif msg == "hw on" then
+        SetCVar("hwDetect", 1)
+        ChatFrame1:AddMessage("Hardware Detect ON.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
+    elseif msg == "hw off" then
+        SetCVar("hwDetect", 0)
+        ChatFrame1:AddMessage("Hardware Detect OFF.")
+        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.")
     end
 end
 
@@ -94,4 +103,30 @@ SLASH_RINS1 = "/ri";
 SlashCmdList.RINS = function()
     ResetInstances();
     ChatFrame1:AddMessage("All instances have been reset")
+end
+
+-- Delete Macros
+SLASH_DM1 = "/dm";
+SlashCmdList['DM'] = function(msg)
+    if msg == "" then
+        ChatFrame1:AddMessage("|cff11ff11/dm acc - |rDeletes ALL Account-wide macros.")
+        ChatFrame1:AddMessage("|cff11ff11/dm char - |rDeletes ALL character-specific macros.")
+        ChatFrame1:AddMessage("|cff11ff11/dm all - |rDeletes ALL macros.")
+        elseif msg == "acc" then
+        for i=-1,120 do DeleteMacro(i) end
+        ChatFrame1:AddMessage("Account-wide macros deleted.")
+    elseif msg == "char" then
+        for i=121,138 do DeleteMacro(i) end
+        ChatFrame1:AddMessage("Char-specific macros deleted.")
+    elseif msg == "all" then
+        for i=-1,138 do DeleteMacro(i) end
+        ChatFrame1:AddMessage("All macros deleted.")
+    end
+end
+
+-- Reset all Action Bars
+SLASH_RACT1 = "/ract";
+SlashCmdList.RACT = function()
+    for i = 1,120 do PickupAction(i) PutItemInBackpack() ClearCursor() end
+    ChatFrame1:AddMessage("All action bars reset.")
 end
