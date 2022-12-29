@@ -85,15 +85,8 @@ end
 
 -- EditMode /em
 SLASH_EDIT1 = "/em";
-SlashCmdList.EDIT = function(msg)
-    if msg == "" then
-        ChatFrame1:AddMessage("|cff11ff11/em show - |rOpens Edit Mode")
-        ChatFrame1:AddMessage("|cff11ff11/em hide - |rHides Edit Mode")
-    elseif msg == "show" then
-        ShowUIPanel(EditModeManagerFrame);
-    elseif msg == "hide" then
-        HideUIPanel(EditModeManagerFrame);
-    end
+SlashCmdList.EDIT = function()
+    ShowUIPanel(EditModeManagerFrame)
 end
 
 -- ChatLogging /chatlog
