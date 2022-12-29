@@ -42,3 +42,7 @@ SlashCmdList[CHATLOG] = function(msg)
     end
 end
 
+SLASH_DEBUG1 = "/dt";
+SlashCmdList.DEBUG = function()
+	Debug_Taint();
+end

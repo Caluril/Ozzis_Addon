@@ -11,7 +11,9 @@ libs\loadlibs.xml
 
 ## Modules
 # Commands
-Modules\Chatcommands.lua
+Modules\commands.lua
+# NoTaints
+Modules\notaint.lua
 
 # GSE Rotations
 #Modules\Rotations\Lutechi\lutechi.lua
