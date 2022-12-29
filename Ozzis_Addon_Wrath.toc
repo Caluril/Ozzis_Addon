@@ -1,11 +1,16 @@
 ## Interface: 30400
-## Title: Ozzis Addon
+## Title: Ozzis Addon |cFF16C3F2v2.8.5|r
 ## Author: Ozzi
-## Version: 1.0
+## Version: 2.8.5
+## OptionalDeps: ElvUI, DugiGuidesViewerZ
+## DefaultState: enabled
 ## LoadManagers: AddonLoader
 
-## Recorder
-Modules\Dugis Recorder\Autoload_Wrath.xml
+## Libs
+libs\loadlibs.xml
 
 ## Modules
-Modules\Autoload.xml
+Modules\commands.lua
+Modules\debugging.lua
+#Modules\Rotations\Lutechi\lutechi.lua
+Modules\Media\Core.luad.xml

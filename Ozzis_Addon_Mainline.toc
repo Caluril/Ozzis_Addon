@@ -10,13 +10,7 @@
 libs\loadlibs.xml
 
 ## Modules
-# Commands
 Modules\commands.lua
-# NoTaints
-Modules\notaint.lua
-
-# GSE Rotations
+Modules\debugging.lua
 #Modules\Rotations\Lutechi\lutechi.lua
-
-# Media For Elvui / SharedMedia
-Modules\Ozzis Media\Media.lua
+Modules\Media\Core.lua
