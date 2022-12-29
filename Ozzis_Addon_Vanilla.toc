@@ -1,0 +1,11 @@
+## Interface: 11403
+## Title: Ozzis Addon
+## Author: Ozzi
+## Version: 1.0
+## LoadManagers: AddonLoader
+
+## Recorder
+Modules\Dugis Recorder\Autoload_Classic_Era.xml
+
+## Modules
+Modules\Autoload.xml
