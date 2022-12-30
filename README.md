@@ -18,7 +18,7 @@ Simple addon that adds Media for ElvUI or SharedMedia and adds other slash comma
         9. /sc hw on = Hardware Detect on<br/>
         10. /sc hw off = Hardware Detect off<br/>
 * FStack - /fs<br/>Adds /fs slash command along with blizzard's /fstack slash command.<br/>
-* Edit Mode - /em<br/>Adds /em slash command that opens Edit Mode, manual click x is required to exit Edit Mode.<br/>
+* Edit Mode - /em<br/>Adds /em slash command that opens or closes Edit Mode.<br/>
 * ChatLog - /chatlog<br/>Adds /chatlog with functions:<br/>
         1. /chatlog on or off = Turns Chat Logging on or off.<br/>
 * ResetInstance - /ri<br/>Adds /ri clash command to reset all instances.<br/>
