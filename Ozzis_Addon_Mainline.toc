@@ -1,7 +1,7 @@
 ## Interface: 100002
-## Title: Ozzis Addon |cFF16C3F2v2.8.5|r
+## Title: Ozzis Addon |cFF16C3F2v2.8.7|r
 ## Author: Ozzi
-## Version: 2.8.5
+## Version: 2.8.7
 ## OptionalDeps: ElvUI, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader
@@ -10,6 +10,7 @@
 libs\loadlibs.xml
 
 ## Modules
+Modules\chatlog.lua
 Modules\commands.lua
 Modules\debugging.lua
 #Modules\Rotations\Lutechi\lutechi.lua

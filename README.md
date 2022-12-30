@@ -33,3 +33,5 @@ Delete Macros - /dm<br/>
         /dm all - Deletes all Account-wide and Character-wide macros<br/>
 Reset all ActionBars - /ract<br/>
     Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
+<br/>
+Added a chatlog auto loader/enable. I have kept the /chatlog slash commands for control support.
