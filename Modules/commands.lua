@@ -86,7 +86,11 @@ end
 -- EditMode /em
 SLASH_EDIT1 = "/em";
 SlashCmdList.EDIT = function()
-    ShowUIPanel(EditModeManagerFrame);
+    if not EditModeManagerFrame:IsShown() then
+      ShowUIPanel(EditModeManagerFrame);
+    elseif EditModeManagerFrame:IsShown() then
+       HideUIPanel(EditModeManagerFrame);
+    end
 end
 
 -- ChatLogging /chatlog
