@@ -12,6 +12,5 @@ libs\loadlibs.xml
 ## Modules
 Modules\chatlog.lua
 Modules\commands.lua
-Modules\debugging.lua
 #Modules\Rotations\Lutechi\lutechi.lua
 Modules\Media\Core.lua
