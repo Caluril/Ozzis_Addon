@@ -7,11 +7,16 @@ Simple addon that adds Media for ElvUI or SharedMedia and adds other slash comma
 * NoTaint2 - /nt2<br/>If !!NoTaint2 is loaded then this slash command will work along with the default /notaint2.<br/>
 * BugSack - /bug<br/>If BugSack is loaded then this slash command will work along with the default /bugsack.<br/>
 * Script CVars - /sc<br/>Adds a series of functions:<br/>
-        1. /sc errors on - off = Turns scriptErrors on or off<br/>
-        2. /sc profile on - off = Turns scriptProfile on or off<br/>
-        3. /sc warning on - off = Turns scriptWarning on or off<br/>
-        4. /sc player 20 or 41 = Sets the nameplatePlayerMaxDistance to 20 or 41<br/>
-        5. /sc hw on - off = Hardware Detect on or off<br/>
+        1. /sc errors on = Turns scriptErrors on<br/>
+        2. /sc errors off = Turns scriptErrors off<br/>
+        3. /sc profile on = Turns scriptProfile on<br/>
+        4. /sc profile off = Turns scriptProfile off<br/>
+        5. /sc warning on = Turns scriptWarning on<br/>
+        6. /sc warning off = Turns scriptWarning off<br/>
+        7. /sc player 20  = Sets the nameplatePlayerMaxDistance to 20<br/>
+        8. /sc player 41 = Sets the nameplatePlayerMaxDistance to 41<br/>
+        9. /sc hw on = Hardware Detect on<br/>
+        10. /sc hw off = Hardware Detect off<br/>
 * FStack - /fs<br/>Adds /fs slash command along with blizzard's /fstack slash command.<br/>
 * Edit Mode - /em<br/>Adds /em slash command that opens Edit Mode, manual click x is required to exit Edit Mode.<br/>
 * ChatLog - /chatlog<br/>Adds /chatlog with functions:<br/>
