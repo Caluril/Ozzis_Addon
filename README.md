@@ -3,7 +3,7 @@ Simple addon that adds Media for ElvUI or SharedMedia and adds other slash comma
 <br/>
 > Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
-* Reload UI - /rl or /reload<br/>If ElvUI is loaded then these slash commands will be disabled to reduce taints and conflicts. In the process of adding other addons that introduce these slash commands.<br/>
+* Reload UI - /rl or /reload<br/>If ElvUI is loaded then these slash commands will be disabled.<br/>
 * NoTaint2 - /nt2<br/>If !!NoTaint2 is loaded then this slash command will work along with the default /notaint2.<br/>
 * BugSack - /bug<br/>If BugSack is loaded then this slash command will work along with the default /bugsack.<br/>
 * Script CVars - /sc<br/>Adds a series of functions:<br/>
