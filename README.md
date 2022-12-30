@@ -15,7 +15,7 @@ Simple addon that adds Media for ElvUI or SharedMedia and adds other slash comma
 * FStack - /fs<br/>Adds /fs slash command along with blizzard's /fstack slash command.<br/>
 * Edit Mode - /em<br/>Adds /em slash command that opens Edit Mode, manual click x is required to exit Edit Mode.<br/>
 * ChatLog - /chatlog<br/>Adds /chatlog with functions:<br/>
-        * /chatlog on or off = Turns Chat Logging on or off.<br/>
+        1. /chatlog on or off = Turns Chat Logging on or off.<br/>
 * ResetInstance - /ri<br/>Adds /ri clash command to reset all instances.<br/>
 * Delete Macros - /dm<br/>Adds /dm slash commands with functions:<br/>
         1. /dm acc - Deletes all Account-wide macros<br/>
