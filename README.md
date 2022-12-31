@@ -28,4 +28,8 @@ A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or 
         3. /dm all - Deletes all Account-wide and Character-wide macros<br/>
 * Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
 <br/>
+<<<<<<< HEAD
 If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
+=======
+If there's anything you would like added or changed etc please let me know via a [Ticket](https://github.com/Caluril/Ozzis_Addon/issues/)
+>>>>>>> main
