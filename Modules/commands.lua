@@ -15,12 +15,6 @@ for addon=1, GetNumAddOns() do
     end
 end
 
--- Testing
-SLASH_TEST1 = "/test";
-SlashCmdList.TEST = function()
-    UIErrorsFrame:AddMessage("Script Errors ON.\nNew Line");
-end
-
 -- Script CVars
 SLASH_SCRIPT1 = "/sc";
 SlashCmdList['SCRIPT'] = function(msg)
