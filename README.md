@@ -1,9 +1,9 @@
 # Ozzis_Addon<br/>
-Simple addon that adds Media for ElvUI or SharedMedia and adds other slash commands and functions for quality of life.<br/>
+A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.<br/>
 <br/>
 > Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
-* Reload UI - /rl or /reload<br/>If ElvUI is loaded then these slash commands will be disabled.<br/>
+* Reload UI - /rl or /reload<br/>If ElvUI is not loaded then these slash commands will be available.<br/>
 * NoTaint2 - /nt2<br/>If !!NoTaint2 is loaded then this slash command will work along with the default /notaint2.<br/>
 * BugSack - /bug<br/>If BugSack is loaded then this slash command will work along with the default /bugsack.<br/>
 * Script CVars - /sc<br/>Adds a series of functions:<br/>
@@ -26,4 +26,5 @@ Simple addon that adds Media for ElvUI or SharedMedia and adds other slash comma
         1. /dm acc - Deletes all Account-wide macros<br/>
         2. /dm char - Deletes all Character-wide macros<br/>
         3. /dm all - Deletes all Account-wide and Character-wide macros<br/>
-* Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.
+* Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
+If there's anything you would like added or changed etc please let me know in Discord 
