@@ -1,7 +1,7 @@
 ## Interface: 30400
-## Title: Ozzis Addon |cFF16C3F2v2.8.8|r
+## Title: Ozzis Addon |cFF16C3F2v2.8.9|r
 ## Author: Ozzi
-## Version: 2.8.8
+## Version: 2.8.9
 ## OptionalDeps: ElvUI, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader
