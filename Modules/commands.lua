@@ -15,6 +15,12 @@ for addon=1, GetNumAddOns() do
     end
 end
 
+-- Testing
+SLASH_TEST1 = "/test";
+SlashCmdList.TEST = function()
+    UIErrorsFrame:AddMessage("Script Errors ON.\nNew Line");
+end
+
 -- Script CVars
 SLASH_SCRIPT1 = "/sc";
 SlashCmdList['SCRIPT'] = function(msg)
@@ -30,44 +36,34 @@ SlashCmdList['SCRIPT'] = function(msg)
         ChatFrame1:AddMessage("|cff11ff11/sc hw off - }rHardware Detect OFF.");
     elseif msg == "errors on" then
         SetCVar("scriptErrors", 1);
-        ChatFrame1:AddMessage("Script Errors ON.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Errors ON.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "errors off" then
         SetCVar("scriptErrors", 0);
-        ChatFrame1:AddMessage("Script Errors OFF.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Errors OFF.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "warning on" then
         SetCVar("scriptWarnings", 1);
-        ChatFrame1:AddMessage("Script Warnings ON.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Warnings ON.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "warning off" then
         SetCVar("scriptWarnings", 0);
-        ChatFrame1:AddMessage("Script Warnings OFF.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Warnings OFF.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "profile on" then
         SetCVar("scriptProfile", 1);
-        ChatFrame1:AddMessage("Script Profile ON.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Profile ON.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "profile off" then
         SetCVar("scriptProfile", 0);
-        ChatFrame1:AddMessage("Script Profile OFF.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Script Profile OFF.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "player 20" then
         SetCVar("nameplatePlayerMaxDistance", 20);
-        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 20");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 20\nPlease reload the UI for the changes to take effect.");
     elseif msg == "player 41" then
         SetCVar("nameplatePlayerMaxDistance", 41);
-        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 41");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("NamePlate Player Max Distance is set to 41\nPlease reload the UI for the changes to take effect.");
     elseif msg == "hw on" then
         SetCVar("hwDetect", 1)
-        ChatFrame1:AddMessage("Hardware Detect ON.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Hardware Detect ON.\nPlease reload the UI for the changes to take effect.");
     elseif msg == "hw off" then
         SetCVar("hwDetect", 0)
-        ChatFrame1:AddMessage("Hardware Detect OFF.");
-        ChatFrame1:AddMessage("Please reload the UI for the changes to take effect.");
+        ChatFrame1:AddMessage("Hardware Detect OFF.\nPlease reload the UI for the changes to take effect.");
     end
 end
 
@@ -103,7 +99,7 @@ SlashCmdList['CHATLOG'] = function(msg)
         IsLogging = LoggingChat(1);
         ChatFrame1:AddMessage("Chat Logging is Enabled");
     elseif msg == "off" then
-        IsLogging = LoggingChat(false);
+        IsLogging = LoggingChat(nil);
         ChatFrame1:AddMessage("Chat Logging is Disabled");
     end
 end

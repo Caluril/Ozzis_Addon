@@ -1,11 +1,15 @@
 local EventFrame = CreateFrame( 'Frame' )
 EventFrame:RegisterEvent( 'PLAYER_ENTERING_WORLD' )
 EventFrame:SetScript( 'OnEvent', function( self, event, ... )
-    if (LoggingChat()) then
-        DEFAULT_CHAT_FRAME:AddMessage("Chat is already being logged");
-    else
-        DEFAULT_CHAT_FRAME:AddMessage("Chat is not being logged - starting it!");  
-        LoggingChat(1);
-        DEFAULT_CHAT_FRAME:AddMessage("Chat is now being logged to Logs\\WOWChatLog.txt");
-    end
+    self[event]( self, ... )
 end)
+
+function EventFrame:PLAYER_ENTERING_WORLD()
+    if (LoggingChat()) then
+        DEFAULT_CHAT_FRAME:AddMessage("Chat logging is enabled\nThe logs are saved to \"Logs\\WOWChatLog.txt\"");
+    else
+        DEFAULT_CHAT_FRAME:AddMessage("Chat logging is disabled - enabling it now!");
+        LoggingChat(1);
+        DEFAULT_CHAT_FRAME:AddMessage("Chat logging is now enabled - saving the logs to \"Logs\\WOWChatLog.txt\"");
+    end
+end
