@@ -14,4 +14,3 @@ Modules\chatlog.lua
 Modules\commands.lua
 #Modules\Rotations\Lutechi\lutechi.lua
 Modules\Media\Core.lua
-Modules\Events\events.lua

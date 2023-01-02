@@ -29,6 +29,4 @@ Version : 2.9.1<br/>
         3. /dm all - Deletes all Account-wide and Character-wide macros<br/>
 * Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
 <br/>
-Beta - Events reminders
-<br/>
 If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
