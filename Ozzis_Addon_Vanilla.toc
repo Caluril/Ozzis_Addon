@@ -1,7 +1,7 @@
 ## Interface: 11403
-## Title: Ozzis Addon |cFF16C3F2v2.9.0|r
+## Title: Ozzis Addon |cFF16C3F2v2.9.1|r
 ## Author: Ozzi
-## Version: 2.9.0
+## Version: 2.9.1
 ## OptionalDeps: ElvUI, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader
@@ -14,3 +14,4 @@ Modules\chatlog.lua
 Modules\commands.lua
 #Modules\Rotations\Lutechi\lutechi.lua
 Modules\Media\Core.lua
+Modules\Events\events.lua

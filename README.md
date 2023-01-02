@@ -1,5 +1,6 @@
 # Ozzis_Addon<br/>
 A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.<br/>
+Version : 2.9.1<br/>
 <br/>
 > Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
@@ -27,5 +28,7 @@ A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or 
         2. /dm char - Deletes all Character-wide macros<br/>
         3. /dm all - Deletes all Account-wide and Character-wide macros<br/>
 * Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
+<br/>
+Beta - Events reminders
 <br/>
 If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
