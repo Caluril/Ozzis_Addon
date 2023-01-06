@@ -8,10 +8,12 @@ for addon=1, GetNumAddOns() do
     elseif name == "ElvUI" and not loaded then
         SLASH_RELOAD_UI1 = "/reload";
         SLASH_RELOAD_UI2 = "/rl";
+    elseif name == "EditModeCombatFix" and not loaded then
+
     elseif name == "!!NoTaint2" and loaded then
         SLASH_NOTAINTII2 = "/nt2";
     elseif name == "BugSack" and loaded then
-        SLASH_BugSack2 = "/bug"
+        SLASH_BugSack2 = "/bug";
     end
 end
 
@@ -77,7 +79,7 @@ end
 SLASH_EDIT1 = "/em";
 SlashCmdList.EDIT = function()
     if not EditModeManagerFrame:IsShown() then
-      ShowUIPanel(EditModeManagerFrame);
+       ShowUIPanel(EditModeManagerFrame);
     elseif EditModeManagerFrame:IsShown() then
        HideUIPanel(EditModeManagerFrame);
     end

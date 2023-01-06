@@ -1,6 +1,6 @@
 local LSM = LibStub('LibSharedMedia-3.0')
 local AddOnName = ...
-local Path = [[Interface\AddOns\]]..AddOnName..[[\Modules\Media\]]
+local Path = [[Interface\AddOns\]]..AddOnName..[[\Media\]]
 
 -- Backgrounds -- These can be either, .tga or .blp
 --LSM:Register('background', 'my background's name', Path..[[Backgrounds\mybackground.tga]])
