@@ -2,7 +2,7 @@
 ## Title: Ozzis Addon |cFF16C3F2v2.9.2|r
 ## Author: Ozzi
 ## Version: 2.9.2
-## OptionalDeps: ElvUI, DugiGuidesViewerZ
+## OptionalDeps: ElvUI, SharedMedia, SharedMediaAdditionalFonts, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader
 

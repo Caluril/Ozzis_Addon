@@ -43,7 +43,6 @@ LSM:Register('font', 'PEPSI', Path..[[Fonts\PEPSI.ttf]])
 LSM:Register('font', 'Restiany', Path..[[Fonts\Restiany.otf]])
 LSM:Register('font', 'Roberto Condensed Bold', Path..[[Fonts\RobotoCondensed-Bold.ttf]])
 LSM:Register('font', 'ROG', Path..[[Fonts\ROG.otf]])
-LSM:Register('font', 'Sanfransico Regular', Path..[[Fonts\SFUIText-Regular.otf]])
 
 -- Sounds
 LSM:Register('sound', 'Guild Wars 2 Message', Path..[[Sounds\GW2Message.ogg]])
@@ -57,4 +56,6 @@ if not select(4, GetAddOnInfo('DugisGuideViewerZ')) then
     LSM:Register('sound', 'Map Ping', Path..[[Sounds\MapPing.ogg]])
 elseif not select(4, GetAddOnInfo('Carbonite')) then
     LSM:Register('sound', 'Carbonite', Path..[[Sounds\QuestComplete.ogg]])
+elseif not select(4, GetAddOnInfo('SharedMediaAdditionalFonts')) then
+    LSM:Register('font', 'Sanfransico Regular', Path..[[Fonts\SFUIText-Regular.otf]])
 end
