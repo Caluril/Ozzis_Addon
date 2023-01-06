@@ -1,7 +1,6 @@
 # Ozzis_Addon<br/>
 A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.<br/>
 Version : 2.9.1<br/>
-<br/>
 # Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
 * Reload UI - /rl or /reload<br/>If ElvUI is not loaded then these slash commands will be available.<br/>
@@ -28,7 +27,6 @@ Version : 2.9.1<br/>
         2. /dm char - Deletes all Character-wide macros<br/>
         3. /dm all - Deletes all Account-wide and Character-wide macros<br/>
 * Reset all ActionBars - /ract<br/>Adds /ract slash command that resets ALL action bars, all abilities will be removed.<br/>
-<br/>
 # Media<br/>
 * Backgrounds - None.. yet<br/>
 * Fonts<br/>
@@ -46,7 +44,7 @@ Version : 2.9.1<br/>
         12. ROG<br/>
         13. San Fransisco UI Text<br/>
 * Icons - None.. yet<br/>
-* Sounds
+* Sounds<br/>
         1. Frankly - Ion: "Frankly that's a skill issue"<br/>
         2. Guild Wars 2 Mail - Guild Wars 2 Mail sound<br/>
         3. Guild Wars 2 Message - Guild Wars 2 Message sound<br/>
@@ -55,5 +53,4 @@ Version : 2.9.1<br/>
         6. Map Ping - Map Ping sound, used in DugiGuides<br/>
         7. OH Shit! - Oh Shit sound, cool sound for pet death.<br/>
         8. Carbonite - Quest Complete, sorta copyright, I have this sound disabled if this addon is present.<br/>
-<br/>
-If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
+<br/>If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
