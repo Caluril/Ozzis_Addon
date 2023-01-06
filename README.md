@@ -1,6 +1,6 @@
 # Ozzis_Addon<br/>
 A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.<br/>
-Version : 2.9.1<br/>
+Version : 2.9.2<br/>
 # Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
 * Reload UI - /rl or /reload<br/>If ElvUI is not loaded then these slash commands will be available.<br/>
