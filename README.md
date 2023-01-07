@@ -1,6 +1,6 @@
 # Ozzis_Addon<br/>
 A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.<br/>
-Version : 2.9.2<br/>
+Version : 2.9.3<br/>
 # Slash Commands<br/>
 * Dugi Guides - /dg<br/>If DugiGuides is loaded this command will work along with default /dugi.<br/>
 * Reload UI - /rl or /reload<br/>If ElvUI is not loaded then these slash commands will be available.<br/>
@@ -53,4 +53,4 @@ Version : 2.9.2<br/>
         6. Map Ping - Map Ping sound, used in DugiGuides<br/>
         7. OH Shit! - Oh Shit sound, cool sound for pet death.<br/>
         8. Carbonite - Quest Complete, sorta copyright, I have this sound disabled if this addon is present.<br/>
-<br/>If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/
+<br/>If there's anything you would like added or changed etc please let me know via https://github.com/Caluril/Ozzis_Addon/issues/ or Discord Ozzi#9217
