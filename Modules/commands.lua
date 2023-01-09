@@ -12,6 +12,8 @@ for addon=1, GetNumAddOns() do
         SLASH_NOTAINTII2 = "/nt2";
     elseif name == "BugSack" and loaded then
         SLASH_BugSack2 = "/bug";
+    elseif name == "BadBoy" and loaded then
+        SLASH_BADBOY2 = "/bb"
     end
 end
 
