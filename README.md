@@ -59,4 +59,4 @@ Version : 2.9.3
     7. OH Shit! - Oh Shit sound, cool sound for pet death.
     8. Carbonite - Quest Complete, I have this sound disabled if this addon is present.
 
-If there's anything you would like added or changed or you have any suggestions, please let me know via [Github Ticket](https://github.com/Caluril/Ozzis_Addon/issues/) or [Discord](discordapp.com/users/792634873051217930)
+If there's anything you would like added or changed or you have any suggestions, please let me know via [Github Ticket](https://github.com/Caluril/Ozzis_Addon/issues/) or Discord - [Ozzi#9217](Ozzi#9217)
