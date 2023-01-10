@@ -101,10 +101,9 @@ SlashCmdList['CHATLOG'] = function(msg)
 end
 
 -- Reset Instances /ri
-SLASH_RINS1 = "/ri";
-SlashCmdList.RINS = function()
+SLASH_RI1 = "/ri";
+SlashCmdList.RI = function()
     ResetInstances();
-    ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rAll instances have been reset")
 end
 
 -- Delete Macros
@@ -114,7 +113,7 @@ SlashCmdList['DM'] = function(msg)
         ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/dm acc - |rDeletes ALL Account-wide macros.")
         ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/dm char - |rDeletes ALL character-specific macros.")
         ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/dm all - |rDeletes ALL macros.")
-        elseif msg == "acc" then
+    elseif msg == "acc" then
         for i=-1,120 do DeleteMacro(i) end
         ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rAccount-wide macros have been deleted.")
     elseif msg == "char" then

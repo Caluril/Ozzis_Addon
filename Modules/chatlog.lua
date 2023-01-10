@@ -6,7 +6,7 @@ end)
 
 function EventFrame:PLAYER_ENTERING_WORLD()
     if (LoggingChat()) then
-        DEFAULT_CHAT_FRAME:AddMessage("|cFF796FC2Ozzis Addon: |rChat logging is enabled\nThe logs are saved to \"Logs\\WOWChatLog.txt\"");
+        DEFAULT_CHAT_FRAME:AddMessage("|cFF796FC2Ozzis Addon: |rChat logging is enabled");
     else
         DEFAULT_CHAT_FRAME:AddMessage("|cFF796FC2Ozzis Addon: |rChat logging is disabled - enabling it now!");
         LoggingChat(1);
