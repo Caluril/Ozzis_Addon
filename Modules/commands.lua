@@ -13,7 +13,9 @@ for addon=1, GetNumAddOns() do
     elseif name == "BugSack" and loaded then
         SLASH_BugSack2 = "/bug";
     elseif name == "BadBoy" and loaded then
-        SLASH_BADBOY2 = "/bb"
+        SLASH_BADBOY2 = "/bb";
+    elseif name == "AddonUsage" and loaded then
+        SLASH_ADDONUSAGE2 = "/usage";
     end
 end
 
@@ -130,4 +132,52 @@ SLASH_RACT1 = "/ract";
 SlashCmdList.RACT = function()
     for i = 1,120 do PickupAction(i) PutItemInBackpack() ClearCursor() end
     ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rAll action bars have been reset.")
+end
+
+-- Set Dungeon Difficulty
+SLASH_SETD1 = "/d";
+SlashCmdList['SETD'] = function(msg)
+    if msg == "" then
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/d n - |rSets Dungeon to Normal Difficulty')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/d h - |rSets Dungeon to Heroic Difficulty')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/d m - |rSets Dungeon to Mythic Difficulty')
+    elseif msg == "get" then
+        GetDungeonDifficultyID();
+    elseif msg == "n" then
+        SetDungeonDifficultyID(1);
+    elseif msg == "h" then
+        SetDungeonDifficultyID(2);
+    elseif msg == "m" then
+        SetDungeonDifficultyID(23);
+    end
+end
+
+-- Set Raid Difficulty
+SLASH_SETR1 = "/r";
+SlashCmdList['SETR'] = function(msg)
+    if msg == "" then
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 10 - |rSets Raid to 10 Player')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 10h - |rSets Raid to 10 Player Heroic')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 25 - |rSets Raid to 25 Player')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 25h - |rSets Raid to 25 Player Heroic')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r n - |rSets Raid to Normal Difficulty')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r h - |rSets Raid to Heroic Difficulty')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r m - |rSets Raid to Mythic Difficulty')
+    elseif msg == "get" then
+        GetRaidDifficultyID();
+    elseif msg == "10" then
+        SetRaidDifficultyID(3);
+    elseif msg == "10h" then
+        SetRaidDifficultyID(5);
+    elseif msg == "25" then
+        SetRaidDifficultyID(4);
+    elseif msg == "25h" then
+        SetRaidDifficultyID(6);
+    elseif msg == "n" then
+        SetRaidDifficultyID(14);
+    elseif msg == "h" then
+        SetRaidDifficultyID(15);
+    elseif msg == "m" then
+        SetRaidDifficultyID(16);
+    end
 end
