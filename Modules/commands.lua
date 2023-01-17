@@ -178,7 +178,7 @@ end
 
 -- World Boss Lock out check
 SLASH_MWB1 = "/wb";
-SlashCmdList['MWB'] = function(cmd)
+SlashCmdList['MWB'] = function()
     local boss 
     for i=1,GetNumSavedWorldBosses()
         do boss = GetSavedWorldBossInfo(i) print("|cFF796FC2Ozzis Addon: |r"..boss..": |cff00ff00Is locked out this week|r")
@@ -187,14 +187,14 @@ end
 
 -- Garrison Invasion Lock out check
 SLASH_INV1 = "/ginv";
-SlashCmdList['INV'] = function(cmd)
+SlashCmdList['INV'] = function()
     for k, v in pairs({ Bronze = 37638, Silver = 37639, Gold = 37640})
         do print(format("|cFF796FC2Ozzis Addon: |r%s: %s", k, C_QuestLog.IsQuestFlaggedCompleted(v) and "\124cff00ff00Yes\124r" or "\124cffff0000No\124r"))
     end
 end
 
 SLASH_MAP1 = "/map";
-SlashCmdList['MAP'] = function(cmd)
+SlashCmdList['MAP'] = function()
     if cmd == "" then
         local mapID = C_Map.GetBestMapForUnit("player");
         print(format("|cFF796FC2Ozzis Addon: |rYou are in %s (%d)", C_Map.GetMapInfo(mapID).name, mapID))
@@ -206,9 +206,9 @@ SlashCmdList['MAP'] = function(cmd)
 end
 
 SLASH_NPC1 = "/npc";
-SlashCmdList['NPC'] = function(cmd)
+SlashCmdList['NPC'] = function()
     if (UnitGUID("target") == nil) then
-        ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rYou must select a NPC");
+        ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rYou must select an NPC or a Player");
     else
         local name = UnitName('target');
         local guid = UnitGUID("target");
@@ -217,10 +217,10 @@ SlashCmdList['NPC'] = function(cmd)
         local unit_type = strsplit("-", guid)
         if unit_type == "Creature" or unit_type == "Vehicle" then
             local _, _, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-", guid)
-            print(format("%s is a creature with NPC ID %d", link, npc_id))
+            print(format("|cFF796FC2Ozzis Addon: |r%s NPC ID %d", link, npc_id))
         elseif unit_type == "Player" then
             local _, server_id, player_id = strsplit("-", guid)
-            print(format("%s is a player with ID %s", link, player_id))
+            print(format("|cFF796FC2Ozzis Addon: |r%s is a player with ID %s", link, player_id))
         end
     end
 end
