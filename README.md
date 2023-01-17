@@ -47,9 +47,7 @@ Version : 2.9.4
     1. '/map' = Outputs your map location e.g., Stormwind City (84)
     2. '/map wmf' = Outputs current map open in World Map Frame (M)
 * NPCID = '/npc' - Adds '/npc' slash command to output the targeted npcID \
-e.g.,
-npcName = "Jennea Cannon"
-npcID = "5497-0" 5497 is the npcID.
+e.g., Thunder Lizard - 191827
 
 # Media
 * Backgrounds - None.. *yet!*
