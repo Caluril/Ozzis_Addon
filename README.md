@@ -46,7 +46,7 @@ Version : 2.9.4
 * MapID = '/map' - Adds a series of functions:
     1. '/map' = Outputs your map location e.g., Stormwind City (84)
     2. '/map wmf' = Outputs current map open in World Map Frame (M)
-* NPCID = '/npc' - Adds '/npc' slash command to output the targeted npcID e.g., Thunder Lizard - 191827
+* NPCID = '/npc' - Adds '/npc' slash command to output the targeted npcID e.g., [Thunder Lizard] is a creature with NPC ID 191827 or [Åleria] is a player with ID 0A69EEA0
 
 # Media
 * Backgrounds - None.. *yet!*
