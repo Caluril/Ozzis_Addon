@@ -211,15 +211,16 @@ SlashCmdList['NPC'] = function(cmd)
         ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rYou must select a NPC");
     else
         local name = UnitName('target');
-        local guid = strsub(UnitGUID("target"),26,31);
+        local guid = UnitGUID("target");
+        local unitLink = "|cffffff00|Hunit:%s|h[%s]|h|r"
+        local link = unitLink:format(guid, name)
         local unit_type = strsplit("-", guid)
-            if unit_type == "Creature" then
-                local _, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-", guid)
-                print(format("%s is a creature with NPC ID %d", link, npc_id))
-            elseif unit_type == "Player" then
-                local _, server_id, player_id = strsplit("-", guid)
-                print(format("%s is a player with ID %s", link, player_id))
-            end
-        ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r"..name.." - "..guid);
+        if unit_type == "Creature" or unit_type == "Vehicle" then
+            local _, _, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-", guid)
+            print(format("%s is a creature with NPC ID %d", link, npc_id))
+        elseif unit_type == "Player" then
+            local _, server_id, player_id = strsplit("-", guid)
+            print(format("%s is a player with ID %s", link, player_id))
+        end
     end
 end
