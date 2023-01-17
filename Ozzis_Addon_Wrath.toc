@@ -1,7 +1,7 @@
 ## Interface: 30400
-## Title: Ozzis Addon |cFF16C3F2v2.9.3|r
+## Title: Ozzis Addon |cFF16C3F2v2.9.4|r
 ## Author: Ozzi
-## Version: 2.9.3
+## Version: 2.9.4
 ## OptionalDeps: ElvUI, SharedMedia, SharedMediaAdditionalFonts, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader

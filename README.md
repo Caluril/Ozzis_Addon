@@ -1,7 +1,7 @@
 # Ozzis_Addon
 A simple addon that adds Media (fonts, backgrounds, textures, etc) for ElvUI or SharedMedia addons and additional slash commands and functions for better quality of life.
 
-Version : 2.9.3
+Version : 2.9.4
 
 # Slash Commands
 * Dugi Guides '/dg' - If DugiGuides is loaded this command will work along with default '/dugi'.
@@ -31,6 +31,25 @@ Version : 2.9.3
     2. '/dm char' - Deletes all Character-wide macros.
     3. '/dm all' - Deletes all Account-wide and Character-wide macros.
 * Reset all ActionBars - '/ract' - Adds '/ract' slash command that resets ALL action bars, all abilities will be removed.
+* Set Dungeon Difficulty - '/d' - Adds a series of functions:
+    1. '/d n' = Dungeon Difficulty to Normal
+    2. '/d h' = Dungeon Difficulty to Heroic
+    3. '/d m' = Dungeon Difficulty to Mythic
+* Set Raid Difficulty - '/r' - Adds a series of functions:
+    1. '/r n' = Raid Difficulty to Normal
+    2. '/r h' = Raid Difficulty to Heroic
+    3. '/r m' = Raid Difficulty to Mythic
+    4. '/r l10 = Legacy Raid to 10 Player
+    5. '/r l25' = Legacy Raid to 25 Player
+* World Boss Lockout Check = '/wb' - Adds '/wb' slash command that checks any lockout for world bosses.
+* Garrison Invasion Lock Out Check = '/ginv' - Adds '/ginv' slash command that checks Garrison Invasion Lock Out Bronze|Silver|Gold.
+* MapID = '/map' - Adds a series of functions:
+    1. '/map' = Outputs your map location e.g., Stormwind City (84)
+    2. '/map wmf' = Outputs current map open in World Map Frame (M)
+* NPCID = '/npc' - Adds '/npc' slash command to output the targeted npcID \
+e.g.,
+npcName = "Jennea Cannon"
+npcID = "5497-0" 5497 is the npcID.
 
 # Media
 * Backgrounds - None.. *yet!*

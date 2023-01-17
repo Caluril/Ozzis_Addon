@@ -142,7 +142,7 @@ SlashCmdList['SETD'] = function(msg)
         ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/d h - |rSets Dungeon to Heroic Difficulty')
         ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/d m - |rSets Dungeon to Mythic Difficulty')
     elseif msg == "get" then
-        GetDungeonDifficultyID();
+        DevTools_Dump(GetDungeonDifficultyID());
     elseif msg == "n" then
         SetDungeonDifficultyID(1);
     elseif msg == "h" then
@@ -156,28 +156,59 @@ end
 SLASH_SETR1 = "/r";
 SlashCmdList['SETR'] = function(msg)
     if msg == "" then
-        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 10 - |rSets Raid to 10 Player')
-        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 10h - |rSets Raid to 10 Player Heroic')
-        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 25 - |rSets Raid to 25 Player')
-        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r 25h - |rSets Raid to 25 Player Heroic')
         ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r n - |rSets Raid to Normal Difficulty')
         ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r h - |rSets Raid to Heroic Difficulty')
         ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r m - |rSets Raid to Mythic Difficulty')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r l10 - |rSets Legacy Raid to 10 Player')
+        ChatFrame1:AddMessage('|cFF796FC2Ozzis Addon: |r|cff11ff11/r l25 - |rSets Legacy Raid to 25 Player')
     elseif msg == "get" then
-        GetRaidDifficultyID();
-    elseif msg == "10" then
-        SetRaidDifficultyID(3);
-    elseif msg == "10h" then
-        SetRaidDifficultyID(5);
-    elseif msg == "25" then
-        SetRaidDifficultyID(4);
-    elseif msg == "25h" then
-        SetRaidDifficultyID(6);
+        DevTools_Dump(GetRaidDifficultyID());
     elseif msg == "n" then
         SetRaidDifficultyID(14);
     elseif msg == "h" then
         SetRaidDifficultyID(15);
     elseif msg == "m" then
         SetRaidDifficultyID(16);
+    elseif msg == "l10" then
+        SetLegacyRaidDifficultyID(3);
+    elseif msg == "l25" then
+        SetLegacyRaidDifficultyID(6);
     end
+end
+
+-- World Boss Lock out check
+SLASH_MWB1 = "/wb";
+SlashCmdList['MWB'] = function(cmd)
+    local boss 
+    for i=1,GetNumSavedWorldBosses()
+        do boss = GetSavedWorldBossInfo(i) print("|cFF796FC2Ozzis Addon: |r"..boss..": |cff00ff00Is locked out this week|r")
+    end
+end
+
+-- Garrison Invasion Lock out check
+SLASH_INV1 = "/ginv";
+SlashCmdList['INV'] = function(cmd)
+    for k, v in pairs({ Bronze = 37638, Silver = 37639, Gold = 37640})
+        do print(format("|cFF796FC2Ozzis Addon: |r%s: %s", k, C_QuestLog.IsQuestFlaggedCompleted(v) and "\124cff00ff00Yes\124r" or "\124cffff0000No\124r"))
+    end
+end
+
+SLASH_MAP1 = "/map";
+SlashCmdList['MAP'] = function(cmd)
+    if cmd == "" then
+        local mapID = C_Map.GetBestMapForUnit("player");
+        print(format("|cFF796FC2Ozzis Addon: |rYou are in %s (%d)", C_Map.GetMapInfo(mapID).name, mapID))
+
+    elseif cmd == "wmf" then
+        local mapID = WorldMapFrame:GetMapID();
+        print(format("|cFF796FC2Ozzis Addon: |r%s (%d)", C_Map.GetMapInfo(mapID).name, mapID))
+    end
+end
+
+SLASH_NPC1 = "/npc";
+SlashCmdList['NPC'] = function(npc)
+    local name = UnitName('target');
+    local guid = strsub(UnitGUID("target"),23,28);
+    ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rnpcName = \""..name.."\"");
+    ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |rnpcID =|cFFFF0000 \""..guid.."\"|r");
 end
