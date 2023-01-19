@@ -1,7 +1,7 @@
-## Interface: 30400
-## Title: Ozzis Addon |cFF16C3F2v2.9.4|r
+## Interface: 30401
+## Title: Ozzis Addon |cFF16C3F2v3.0.0|r
 ## Author: Ozzi
-## Version: 2.9.4
+## Version: 3.0.0
 ## OptionalDeps: ElvUI, SharedMedia, SharedMediaAdditionalFonts, DugiGuidesViewerZ
 ## DefaultState: enabled
 ## LoadManagers: AddonLoader
@@ -9,9 +9,26 @@
 ## Libs
 libs\loadlibs.xml
 
+commands.lua
+
 ## Media
 Media\Core.lua
 
 ## Modules
 Modules\chatlog.lua
-Modules\commands.lua
+Modules\cvars.lua
+Modules\reload.lua
+Modules\framestack.lua
+Modules\editmode.lua
+Modules\chat.lua
+Modules\resetinstance.lua
+Modules\deletemacros.lua
+Modules\resetactionbars.lua
+Modules\dungeondifficulty.lua
+Modules\raiddifficulty.lua
+Modules\lockout.lua
+Modules\mapid.lua
+Modules\npcid.lua
+Modules\buildid.lua
+Modules\scenarioid.lua
+Modules\garbage.lua
