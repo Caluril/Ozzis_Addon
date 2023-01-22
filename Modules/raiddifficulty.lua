@@ -1,11 +1,17 @@
 local _, core = ...;
 
+---------------------------------------
+-- Environments
+---------------------------------------
 local expansion = GetExpansionLevel();
+
 ---------------------------------------
 -- Set Raid Difficulty
 ---------------------------------------
 SlashCmdList['SETR'] = function(arg)
-    if (expansion == 0) or (expansion == 1) or (expansion == 2) then
+    if (expansion == 0) then
+        return
+    elseif (expansion == 1) or (expansion == 2) then
         if arg == "" then
             ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/r 10 - |rSets Raid to 10 Player")
             ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/r 25 - |rSets Raid to 25 Player")

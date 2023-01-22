@@ -4,8 +4,9 @@ local _, core = ...;
 -- Environments
 ---------------------------------------
 local expansion = GetExpansionLevel();
-if (expansion == 0) and (expansion == 1) and (expansion == 2) then
-    return true
+
+if (expansion == 0) or (expansion == 1) or (expansion == 2) then
+    return
 elseif (expansion == 9) then
     local criteriaIndex = (select(3, C_Scenario.GetStepInfo()));
     local criteriaID = (select(9, C_Scenario.GetCriteriaInfo(criteriaIndex)));

@@ -9,7 +9,9 @@ local expansion = GetExpansionLevel();
 -- Set Dungeon Difficulty
 ---------------------------------------
 SlashCmdList['SETD'] = function(arg)
-    if (expansion == 0) or (expansion == 1) or (expansion == 2) then
+    if (expansion == 0) then
+        return
+    elseif (expansion == 1) or (expansion == 2) then
         if arg == "" then
             ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/d n - |rSets Dungeon to Normal Difficulty")
             ChatFrame1:AddMessage("|cFF796FC2Ozzis Addon: |r|cff11ff11/d h - |rSets Dungeon to Heroic Difficulty")

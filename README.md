@@ -8,7 +8,6 @@ Version : 3.0.0
 
 # Slash Commands (Loaded Addons)
 * Dugi Guides '/dg' - If DugiGuides is loaded this command will work along with default '/dugi'.
-* Reload UI '/rl' or '/reload' - If ElvUI is not loaded then these slash commands will be available.
 * NoTaint2 - '/nt2' - If !!NoTaint2 is loaded then this slash command will work along with the default '/notaint2'.
 * BugSack - '/bug' - If BugSack is loaded then this slash command will work along with the default '/bugsack'.
 * BadBoy - '/bb' - If BadBoy is loaded then this slash command will work along with the default '/badboy'.
@@ -52,6 +51,7 @@ Version : 3.0.0
 
 ## Dungeon Difficulty
 * Set Dungeon Difficulty - '/d' - Adds a series of functions:
+    * Classic = disabled
     * Classic Wrath
     1. '/d n' = Dungeon Difficulty to Normal
     2. '/d h' = Dungeon Difficulty to Heroic
@@ -62,7 +62,8 @@ Version : 3.0.0
 
 ## Raid Difficulty
 * Set Raid Difficulty - '/r' - Adds a series of functions:
-    * Calssic Wrath
+    * Classic = Disabled
+    * Classic Wrath
     1. '/r 10' = Raid to 10 Player
     2. '/r 25' = Raid to 25 Player
     * Retail
